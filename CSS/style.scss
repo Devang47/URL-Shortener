@@ -37,6 +37,7 @@ nav {
       }
     }
     .navContent {
+      overflow: hidden;
       display: none;
       position: absolute;
       top: 100%;
@@ -106,7 +107,7 @@ nav {
     padding-left: 20px;
     img {
       width: 490px;
-      margin: 40px auto;
+      margin: 10px auto 40px;
     }
   }
   .left {
@@ -354,6 +355,7 @@ footer {
     width: fit-content;
     font-size: 38px;
     font-weight: 700;
+    // opacity: 0;
   }
   .links {
     margin: 20px auto;

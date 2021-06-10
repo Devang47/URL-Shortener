@@ -36,6 +36,7 @@ nav .navParent .trigger img {
 }
 
 nav .navParent .navContent {
+  overflow: hidden;
   display: none;
   position: absolute;
   top: 100%;
@@ -119,7 +120,7 @@ nav .navParent .navContent .btns .signup-btn {
 
 .landing-content .human-on-chair img {
   width: 490px;
-  margin: 40px auto;
+  margin: 10px auto 40px;
 }
 
 .landing-content .left .head {
