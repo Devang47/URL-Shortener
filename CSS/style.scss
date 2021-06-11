@@ -465,7 +465,6 @@ footer {
   }
 }
 
-//Loading spinner
 .spinner {
   width: 100%;
   display: flex;
@@ -631,8 +630,6 @@ footer {
     }
   }
   footer {
-    .logo {
-    }
     .links {
       display: grid;
       grid-template-columns: 30% 30% 30%;
@@ -717,8 +714,6 @@ footer {
               background-color: rgb(228, 228, 228);
             }
           }
-          .signup-btn {
-          }
         }
       }
       .trigger {
@@ -734,7 +729,6 @@ footer {
     width: 80%;
     max-width: 1800px;
     margin: 0 auto;
-    // overflow: ;
     .human-on-chair {
       width: 50%;
       overflow: visible;
@@ -749,8 +743,6 @@ footer {
     .left {
       width: 50%;
       padding: 0px 0 0 0px;
-
-      // height: 80%;
       .head {
         width: 70%;
         max-width: 600px;
@@ -811,7 +803,7 @@ footer {
     .shorten-btn {
       width: 15%;
       margin: 0 20px 0;
-      min-height: 25px;
+      min-height: 35px;
     }
   }
   #previous {
@@ -827,9 +819,10 @@ footer {
       padding: 10px 40px;
       .url {
         width: 65%;
+        font-size: 15px;
       }
       button {
-        text-align: right;
+        text-align: center;
         margin: 0;
         width: inherit;
         min-width: none;
@@ -840,14 +833,15 @@ footer {
         min-width: none;
         max-width: 400px;
         margin: 0 20px;
-        background-color: #0000;
+        // background-color: #0000;
         button {
           text-align: center;
           width: 100%;
           padding: 5px 0px;
           min-width: none;
           max-width: 400px;
-          background-color: #0000;
+          font-size: 15px;
+          // background-color: #0000;
         }
       }
       .copy-btn {

@@ -969,7 +969,7 @@ footer .social-links .item svg:hover {
   .shorten-box .shorten-btn {
     width: 15%;
     margin: 0 20px 0;
-    min-height: 25px;
+    min-height: 35px;
   }
   #previous {
     min-width: 1000px;
@@ -993,9 +993,10 @@ footer .social-links .item svg:hover {
   }
   #previous .item .url {
     width: 65%;
+    font-size: 15px;
   }
   #previous .item button {
-    text-align: right;
+    text-align: center;
     margin: 0;
     width: inherit;
     min-width: none;
@@ -1008,7 +1009,6 @@ footer .social-links .item svg:hover {
     min-width: none;
     max-width: 400px;
     margin: 0 20px;
-    background-color: #0000;
   }
   #previous .item .shortened-url button {
     text-align: center;
@@ -1016,7 +1016,7 @@ footer .social-links .item svg:hover {
     padding: 5px 0px;
     min-width: none;
     max-width: 400px;
-    background-color: #0000;
+    font-size: 15px;
   }
   #previous .item .copy-btn {
     width: 10%;
