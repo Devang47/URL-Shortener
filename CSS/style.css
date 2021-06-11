@@ -47,13 +47,20 @@ nav .navParent .navContent {
   background-color: #3b3054;
   border-radius: 20px;
   text-align: center;
-  padding: 20px 20px;
 }
 
 nav .navParent .navContent a {
-  color: white;
+  color: #dbdbdb;
   font-family: "Poppins";
   text-decoration: none;
+}
+
+nav .navParent .navContent a:hover {
+  color: white;
+}
+
+nav .navParent .navContent .left {
+  margin-top: 20px;
 }
 
 nav .navParent .navContent .left ul {
@@ -80,6 +87,7 @@ nav .navParent .navContent .btns {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
 }
 
 nav .navParent .navContent .btns button {
@@ -95,12 +103,21 @@ nav .navParent .navContent .btns button {
   font-size: 20px;
 }
 
+nav .navParent .navContent .btns .login-btn {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
 nav .navParent .navContent .btns .login-btn:hover {
   background-color: rgba(255, 255, 255, 0.171);
 }
 
 nav .navParent .navContent .btns .signup-btn {
   background-color: #2acfcf;
+}
+
+nav .navParent .navContent .btns .signup-btn:hover {
+  background-color: #009e9e;
 }
 
 .landing-content .human-on-chair {
@@ -119,14 +136,14 @@ nav .navParent .navContent .btns .signup-btn {
 }
 
 .landing-content .human-on-chair img {
-  width: 490px;
+  width: 430px;
   margin: 10px auto 40px;
 }
 
 .landing-content .left .head {
   font-weight: 700;
   text-align: center;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 1.1;
   width: 95%;
   margin: 0 auto;
@@ -156,6 +173,10 @@ nav .navParent .navContent .btns .signup-btn {
   font-size: 18px;
   border: none;
   border-radius: 50px;
+}
+
+.landing-content .left .cta-btn button:hover {
+  background-color: #009e9e;
 }
 
 .grey {
@@ -193,19 +214,48 @@ nav .navParent .navContent .btns .signup-btn {
   padding: 5px 20px;
 }
 
+.shorten-box .input input::-webkit-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shorten-box .input input:-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shorten-box .input input::-ms-input-placeholder {
+  color: #9e9aa7;
+}
+
+.shorten-box .input input::placeholder {
+  color: #9e9aa7;
+}
+
 .shorten-box .shorten-btn {
   width: 95%;
   text-align: center;
   background-color: #2acfcf;
   color: white;
   height: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 15px auto 0;
   border-radius: 10px;
   font-size: 20px;
   padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.shorten-box .shorten-btn #shorten-btn-txt {
+  width: 100%;
+  text-align: center;
+}
+
+.shorten-box .shorten-btn:hover {
+  background-color: #009e9e;
 }
 
 #previous {
@@ -248,6 +298,7 @@ nav .navParent .navContent .btns .signup-btn {
 
 #previous .item .url {
   color: #1b1b1b;
+  font-size: 17px;
 }
 
 #previous .item button {
@@ -405,6 +456,10 @@ nav .navParent .navContent .btns .signup-btn {
   font-weight: 700;
 }
 
+.pre-footer-content .btn button:hover {
+  background-color: #009e9e;
+}
+
 footer {
   padding: 50px 20px;
   background-color: #232127;
@@ -464,5 +519,52 @@ footer .social-links img {
   color: #2acfcf;
   -webkit-text-decoration: dotted;
           text-decoration: dotted;
+}
+
+.spinner {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 100%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 # Front-end Style Guide
+["7692ff","3b3054","f7ce5b","ef626c"]
 
 ## Layout
 
@@ -20,7 +21,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Gray: 
+- Gray: hsl(0, 0%, 75%)
 - Grayish Violet: hsl(257, 7%, 63%)
 - Very Dark Blue: hsl(255, 11%, 22%)
 - Very Dark Violet: hsl(260, 8%, 14%)

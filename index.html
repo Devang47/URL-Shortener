@@ -20,7 +20,7 @@
   <body>
     <nav>
       <div class="navParent">
-        <div class="logo" >
+        <div class="logo">
           <img src="./images/logo.svg" alt="" />
         </div>
         <div class="trigger" onclick="navbarToggle()">
@@ -53,7 +53,7 @@
           links are performing.
         </div>
         <div class="cta-btn">
-          <button>Get Started</button>
+          <button onclick="getStarted()" id="get-started">Get Started</button>
         </div>
       </div>
     </div>
@@ -66,7 +66,20 @@
 "
           />
         </div>
-        <div class="shorten-btn">Shorten it!</div>
+        <div>
+          <button  class="shorten-btn" onclick="shorten()">
+
+            <div id="shorten-btn-txt">
+              
+              Shorten it!
+            </div>
+            <div class="spinner" id="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+          </button>
+        </div>
       </div>
 
       <div id="previous">
@@ -80,7 +93,7 @@
             https://rollink/af2r3
           </button>
           <div class="copy-btn">
-            <button>Copy</button>
+            <button onclick="copyLink(1 , this)">Copy</button>
           </div>
         </div>
         <div class="item" data-aos="zoom-in">
@@ -93,10 +106,10 @@
             https://rollink/af2r3
           </button>
           <div class="copy-btn">
-            <button>Copy</button>
+            <button onclick="copyLink(2 , this)">Copy</button>
           </div>
         </div>
-        <div class="item" data-aos="zoom-in" >
+        <div class="item" data-aos="zoom-in">
           <div class="url">https://devangsaklani.web.app/</div>
           <button
             type="text"
@@ -106,7 +119,7 @@
             https://rollink/af2r3
           </button>
           <div class="copy-btn">
-            <button>Copy</button>
+            <button onclick="copyLink(3 , this)">Copy</button>
           </div>
         </div>
       </div>
@@ -117,7 +130,7 @@
         statistics dashboard.
       </div>
       <div class="cards">
-        <div class="item"  data-aos="fade-right">
+        <div class="item" data-aos="fade-right">
           <div class="img">
             <img src="./images/icon-brand-recognition.svg" alt="" />
           </div>
@@ -128,7 +141,7 @@
           </div>
         </div>
         <div class="item" data-aos="fade-right">
-          <div class="img" >
+          <div class="img">
             <img src="./images/icon-detailed-records.svg" alt="" />
           </div>
           <div class="head">Detailed Records</div>
@@ -137,7 +150,7 @@
             where people engage with your content helps inform better decisions.
           </div>
         </div>
-        <div class="item"  data-aos="fade-right">
+        <div class="item" data-aos="fade-right">
           <div class="img">
             <img src="./images/icon-fully-customizable.svg" alt="" />
           </div>
@@ -156,8 +169,14 @@
         </div>
       </div>
       <footer>
-        <div class="logo" id="footer-logo" 
-        data-aos="fade-left" data-aos-id="super-duper" >Shortly</div>
+        <div
+          class="logo"
+          id="footer-logo"
+          data-aos="fade-left"
+          data-aos-id="super-duper"
+        >
+          Shortly
+        </div>
         <div class="links">
           <div class="list">
             <div class="topic">Features</div>
@@ -196,7 +215,7 @@
             <img src="./images/icon-instagram.svg" alt="" />
           </div>
         </div>
-        <div class="attribution" >
+        <div class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
@@ -205,6 +224,11 @@
       </footer>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
