@@ -67,8 +67,7 @@
             placeholder="Shorten a link here..."
             id="linkForShortening"
           />
-        </div>
-        <div>
+        </div class="shorten-btn-parent">
           <button class="shorten-btn" onclick="shorten()">
             <div id="shorten-btn-txt">Shorten it!</div>
             <div class="spinner" id="spinner">
@@ -77,51 +76,10 @@
               <div class="bounce3"></div>
             </div>
           </button>
-        </div>
       </div>
-      <div id="error-msg">
-
-      </div>
+      <div id="error-msg"></div>
       <div id="previous">
-        <div class="item" data-aos="zoom-in">
-          <div class="url">https://devangsaklani.web.app/</div>
-          <button
-            type="text"
-            value="https://rollink/af2r3"
-            class="shortened-url"
-          >
-            https://rollink/af2r3
-          </button>
-          <div class="copy-btn">
-            <button onclick="copyLink(1 , this)">Copy</button>
-          </div>
-        </div>
-        <div class="item" data-aos="zoom-in">
-          <div class="url">https://devangsaklani.web.app/</div>
-          <button
-            type="text"
-            value="https://rollink/af2r3"
-            class="shortened-url"
-          >
-            https://rollink/af2r3
-          </button>
-          <div class="copy-btn">
-            <button onclick="copyLink(2 , this)">Copy</button>
-          </div>
-        </div>
-        <div class="item" data-aos="zoom-in">
-          <div class="url">https://devangsaklani.web.app/</div>
-          <button
-            type="text"
-            value="https://rollink/af2r3"
-            class="shortened-url"
-          >
-            https://rollink/af2r3
-          </button>
-          <div class="copy-btn">
-            <button onclick="copyLink(3 , this)">Copy</button>
-          </div>
-        </div>
+       
       </div>
 
       <div class="advanced-head">Advanced Statistics</div>
@@ -165,7 +123,7 @@
       <div class="pre-footer-content">
         <div class="head">Boost your links today</div>
         <div class="btn" data-aos="fade-up">
-          <button onclick="getStarted(this)">Get Started</button>
+          <button onclick="getStarted(this) ">Get Started</button>
         </div>
       </div>
       <footer>
@@ -231,13 +189,13 @@
             </svg>
           </div>
         </div>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Devang Saklani</a>.
-        </div>
       </footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Devang Saklani</a>.
+      </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script
@@ -247,6 +205,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
   </body>
 </html>
