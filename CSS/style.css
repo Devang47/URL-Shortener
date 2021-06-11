@@ -137,7 +137,7 @@ nav .navParent .navContent .btns .signup-btn:hover {
 
 .landing-content .human-on-chair img {
   width: 430px;
-  margin: 10px auto 40px;
+  margin: 10px auto 60px;
 }
 
 .landing-content .left .head {
@@ -258,6 +258,21 @@ nav .navParent .navContent .btns .signup-btn:hover {
   background-color: #009e9e;
 }
 
+#error-msg {
+  display: none;
+  background-color: #ffd6d2;
+  color: red;
+  padding: 20px;
+  margin: -20px auto 50px;
+  width: 90%;
+  min-width: 350px;
+  max-width: 450px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px #26262617 , 0 10px 20px #b3001b27, 0 20px 40px #b3001b27;
+          box-shadow: 0 0 10px #26262617 , 0 10px 20px #b3001b27, 0 20px 40px #b3001b27;
+}
+
 #previous {
   margin-top: 20px;
   display: -webkit-box;
@@ -304,14 +319,19 @@ nav .navParent .navContent .btns .signup-btn:hover {
 #previous .item button {
   color: #5050ee;
   border-radius: 10px;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border: none;
   margin: 10px auto 5px;
-  font-size: 16px;
-  background-color: #0000;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #CEEDDB;
+  padding: 3px 15px;
 }
 
 #previous .item .copy-btn button {
+  width: 55%;
   margin: 0;
   background-color: #2acfcf;
   color: white;
@@ -506,8 +526,13 @@ footer .social-links {
   width: fit-content;
 }
 
-footer .social-links img {
+footer .social-links .item svg {
   width: 30px;
+  fill: #fff;
+}
+
+footer .social-links .item svg:hover {
+  fill: #FFA69E;
 }
 
 .attribution {
@@ -519,6 +544,10 @@ footer .social-links img {
   color: #2acfcf;
   -webkit-text-decoration: dotted;
           text-decoration: dotted;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 .spinner {
@@ -549,7 +578,9 @@ footer .social-links img {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
   }
   40% {
@@ -558,7 +589,9 @@ footer .social-links img {
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
