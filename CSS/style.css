@@ -254,9 +254,13 @@ nav .navParent .navContent .btns .signup-btn:hover {
       -ms-flex-align: center;
           align-items: center;
   border: none;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .shorten-box .shorten-btn #shorten-btn-txt {
+  text-decoration: none;
+  font-weight: 700;
   width: 100%;
   text-align: center;
 }
@@ -970,6 +974,8 @@ footer .social-links .item svg:hover {
     width: 15%;
     margin: 0 20px 0;
     min-height: 35px;
+    text-decoration: none;
+    font-weight: 70;
   }
   #previous {
     min-width: 1000px;
