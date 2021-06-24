@@ -16,6 +16,10 @@ $cyan: hsl(180, 66%, 49%);
 $grey: hsl(0, 0%, 75%);
 $grey-dark: hsl(257, 7%, 63%);
 
+html{
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
 }
@@ -39,7 +43,8 @@ nav {
     }
     .navContent {
       overflow: hidden;
-      display: none;
+      // display: none;
+      height: 0px;
       position: absolute;
       top: 100%;
       left: 50%;
@@ -91,7 +96,7 @@ nav {
         }
         .login-btn {
           transition: all 0.1s ease;
-
+          background-color: #f8f8f810;
           &:hover {
             background-color: rgba(255, 255, 255, 0.171);
           }
@@ -116,7 +121,7 @@ nav {
     justify-content: flex-start;
     padding-left: 20px;
     img {
-      width: 430px;
+      width: 400px;
       margin: 10px auto 60px;
     }
   }
@@ -677,6 +682,7 @@ footer {
         border-radius: 0;
         width: 100%;
         text-align: left;
+        height: fit-content !important;
         a {
           color: $grey-dark;
           &:hover {

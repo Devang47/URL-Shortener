@@ -9,10 +9,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>URL Shortener | Devang</title>
-
-    <link rel="stylesheet" href="./CSS/style.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="./JS/script.js" defer></script>
@@ -26,7 +24,7 @@
         <div class="trigger" onclick="navbarToggle()">
           <img src="./images/menuicon.png" alt="" />
         </div>
-        <div class="navContent" id="navContent">
+        <div class="navContent" id="navContent" style="height: 0px;">
           <div class="left">
             <ul>
               <li><a href="#"> Features </a></li>
@@ -60,7 +58,7 @@
       </div>
     </div>
     <div class="grey">
-      <div class="shorten-box">
+      <div class="shorten-box" id="shortener">
         <div class="input">
           <input
             type="text"

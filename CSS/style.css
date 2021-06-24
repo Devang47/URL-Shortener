@@ -10,6 +10,10 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
 }
@@ -41,7 +45,7 @@ nav .navParent .trigger img {
 
 nav .navParent .navContent {
   overflow: hidden;
-  display: none;
+  height: 0px;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -109,6 +113,7 @@ nav .navParent .navContent .btns button {
 nav .navParent .navContent .btns .login-btn {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  background-color: #f8f8f810;
 }
 
 nav .navParent .navContent .btns .login-btn:hover {
@@ -139,7 +144,7 @@ nav .navParent .navContent .btns .signup-btn:hover {
 }
 
 .landing-content .human-on-chair img {
-  width: 430px;
+  width: 400px;
   margin: 10px auto 60px;
 }
 
@@ -811,6 +816,9 @@ footer .social-links .item svg:hover {
     border-radius: 0;
     width: 100%;
     text-align: left;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
   nav .navParent .navContent a {
     color: #9e9aa7;

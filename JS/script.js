@@ -7,28 +7,25 @@ AOS.init({
 
 const navbarToggle = () => {
   let navbar = document.querySelector("#navContent");
-  if (navbar.style.display == "") {
-    navbar.style.display = "block";
+  if (navbar.style.height == '0px') {
     anime({
       targets: navbar,
-      height: [0, 378],
-      duration: 800,
+      height: 378,
+      duration: 400,
+      easing: 'easeOutExpo',
     });
   } else {
     anime({
       targets: navbar,
-      height: [378, 0],
-      duration: 800,
-      changeComplete: () => {
-        navbar.style.display = "";
-      },
+      height: 0,
+      duration: 400,
+      easing: 'easeOutExpo',
     });
   }
 };
 
 const getStarted = (btn) => {
   let Temp = anime.timeline({});
-  // let btn = document.getElementById("get-started");
   Temp.add({
     targets: btn,
     backgroundColor: "#2E294E",
@@ -45,6 +42,7 @@ const getStarted = (btn) => {
       complete: () => {
         btn.innerHTML = "Done!";
         btn.disabled = true;
+        window.location.href = "#get-started";
       },
     },
     "+=200"
